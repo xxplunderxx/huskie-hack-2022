@@ -1,52 +1,63 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="./assets/css/style.css" />
-        <link rel="stylesheet" href="./assets/css/scroll.css" />
-        <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js" defer></script>
-        <script src="https://unpkg.com/scrollama" defer></script>
-        <script src="./src/scroll-controller.js" defer></script>
-        <title>TBA</title>
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/redlining.css" />
+    <link rel="stylesheet" href="./assets/css/food-desert.css" />
+    <script
+      src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"
+      defer
+    ></script>
+    <script src="https://unpkg.com/scrollama" defer></script>
+    <script src="./src/scroll-controller.js" defer></script>
+    <title>TBA</title>
+  </head>
 
-    <body>
-        <main>
-      
-            <section id="intro">
-                <h1 class="intro__hed">Sticky Overlay Example</h1>
-                <p class="intro__dek">
-                    Start scrolling to see how it works.
-                </p>
-            </section>
+  <body>
+    <main>
+      <section id="intro">
+        <h1 class="intro__hed"></h1>
+        <p class="intro__dek"></p>
+      </section>
 
-            <section id="scrolly">
-                <div class="sticky-thing">
-                    <p>0</p>
-                </div>
+      <section id="redlining">
+        <article>
+          <div class="redlining-step" data-step="1">
+            <p>
+              White flight and redlining had lasting effects that creadted food
+              deserts, food appartheid, and vacant commercial buildings at the
+              same time.
+            </p>
+          </div>
+        </article>
 
-                <article>
-                    <div class="step" data-step="1">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    </div>
+        <div class="redlining-sticky-img">
+          <img src="./assets/img/redlining.jpeg" />
+        </div>
+      </section>
 
-                    <div class="step" data-step="2">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    </div>
+      <section id="food-desert">
+        <article>
+          <div class="food-desert-step" data-step="1">
+            <p>
+              People in food deserts have already started growing their own food.
+              <ul>
+                <li>
+                    Government funding needs to be allocated better. Agricultural education programs to willing minorities.
+                </li>
+                <li>
+                    On a small scale at first, vacant buildings/areas will be used for farmers to sell their produces with a rotating farmers market.
+                </li>
+              </ul>
+            </p>
+          </div>
+        </article>
+      </section>
 
-                    <div class="step" data-step="3">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    </div>
-
-                    <div class="step" data-step="4">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    </div>
-                </article>
-            </section>
-
-            <section id="outro"></section>
-        </main>
-    </body>
+      <section id="outro"></section>
+    </main>
+  </body>
 </html>

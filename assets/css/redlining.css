@@ -1,0 +1,61 @@
+#redlining {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem;
+}
+
+#redlining > * {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.redlining-sticky-img {
+  position: -webkit-sticky;
+  position: sticky;
+  width: 100%;
+  margin: 0;
+  margin-bottom: 20rem;
+  /*background-color: #8a8a8a;*/
+  z-index: 0;
+  height: 35vh;
+  /* Center everything inside */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.redlining-sticky-img img {
+  width: 650px;
+  height: 400px;
+  object-fit: contain;
+}
+
+.redlining-sticky-img p {
+  padding: 1rem;
+  font-size: 8rem;
+  font-weight: 900;
+  color: #fff;
+}
+
+.redlining-step {
+  margin: 0 auto 30rem auto;
+  background-color: #3b3b3b54;
+  color: #fff;
+}
+
+.redlining-step:last-child {
+  margin-bottom: 0;
+}
+
+.redlining-step.is-active {
+  background-color: #3b3b3ba5;
+  color: #fff;
+}
+
+.redlining-step p {
+  padding: 1rem;
+  font-size: 1.5rem;
+}

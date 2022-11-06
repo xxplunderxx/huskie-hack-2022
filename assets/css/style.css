@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
 }
-  
+
 html,
 body {
     margin: 0;
@@ -14,6 +14,8 @@ body {
     min-height: 1280px;
     color: #3b3b3b;
     font-size: 24px;
+    background-image: linear-gradient(rgb(48, 178, 222), blue);
+    background-repeat: no-repeat;
 }
   
 p,
@@ -53,4 +55,8 @@ a:hover {
 #outro {
     height: 640px;
 }
-  
+
+article {
+  position: relative;
+  padding: 0 1rem;
+}
