@@ -25,8 +25,8 @@
 }
 
 .step.is-active {
-  background-color: #3b3b3ba5;
-  color: #fff;
+  background-color: #ffffffa5;
+  color: rgb(0, 0, 0);
   animation: fadein 0.75s ease-in;
 }
 
