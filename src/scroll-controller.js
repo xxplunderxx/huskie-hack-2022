@@ -1,20 +1,20 @@
 // Gets all DOMs
 var main = document.querySelector("main");
-var redlining = main.querySelector("#scrolly");
-var redliningSticky = redlining.querySelector(".redlining-sticky-img");
-var redliningArticle = redlining.querySelector("article");
-var redliningSteps = redliningArticle.querySelectorAll(".step");
+var scrolly = main.querySelector("#scrolly");
+var redliningSticky = scrolly.querySelector(".redlining-sticky-img");
+var article = scrolly.querySelector("article");
+var steps = article.querySelectorAll(".step");
 
 
 // Initializes the scrollama
 var scroller1 = scrollama();
+var scroller2 = scrollama();
 
 // Handles the entering of the next step
-function handleStepEnterRedlining(response) {
+function handleStepEnter(response) {
   var currentStep = response.element;
 
   // Removes previous step, and sets current step to active
-  redliningSteps.forEach((step) => step.classList.remove("is-active"));
   currentStep.classList.add("is-active");
 }
 
@@ -26,9 +26,17 @@ function init() {
     .setup({
       step: "#scrolly article .step",
       offset: 0.55,
-      debug: true,
+      //debug: true,
     })
-    .onStepEnter(handleStepEnterRedlining);
+    .onStepEnter(handleStepEnter);
+
+    scroller2
+    .setup({
+      step: "#scrolly-img article .step",
+      offset: 0.55,
+      //debug: true,
+    })
+    .onStepEnter(handleStepEnter);
 
   // Checks if window is resized and resizes
   window.addEventListener("resize", scroller1.resize);
