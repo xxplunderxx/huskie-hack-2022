@@ -1,4 +1,4 @@
-#redlining {
+#scrolly {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6,7 +6,7 @@
   padding: 1rem;
 }
 
-#redlining > * {
+#scrolly > * {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -40,22 +40,35 @@
   color: #fff;
 }
 
-.redlining-step {
-  margin: 0 auto 30rem auto;
-  background-color: #3b3b3b54;
-  color: #fff;
+.step {
+  animation: fadeout 1s ease-in;
+  margin: 0 auto 20rem auto;
+  /*background-color: #3b3b3b54;*/
+  background-color: #ffffff00;
+  color: #ffffff00;
 }
 
-.redlining-step:last-child {
+.step:last-child {
   margin-bottom: 0;
 }
 
-.redlining-step.is-active {
+.step.is-active {
   background-color: #3b3b3ba5;
   color: #fff;
+  animation: fadein 0.75s ease-in;
 }
 
-.redlining-step p {
+.step li {
   padding: 1rem;
   font-size: 1.5rem;
+}
+
+@keyframes fadein {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadeout {
+  0%   { opacity: 1; }
+  100% { opacity: 0; }
 }
